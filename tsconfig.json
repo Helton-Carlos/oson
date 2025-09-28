@@ -10,8 +10,8 @@
     "module": "node16",
     "target": "es2022",
     "types": [],
+    "lib": ["es2023"],
     // For nodejs:
-    // "lib": ["esnext"],
     // "types": ["node"],
     // and npm install -D @types/node
 
