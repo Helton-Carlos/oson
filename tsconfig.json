@@ -12,6 +12,8 @@
     "moduleResolution": "Node",
     "types": [],
     "lib": ["es2023"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     // For nodejs:
     // "types": ["node"],
     // and npm install -D @types/node
