@@ -1,8 +1,9 @@
 import type { Request, Response } from 'express';
-import pool from '../db/index';
+import pool from '@db/index';
 import { v4 as uuidv4 } from 'uuid';
 import jwt from 'jsonwebtoken';
-import type { User } from '../types/user';
+
+import type { User } from '@types/user';
 
 const JWT_SECRET = process.env.JWT_SECRET || '';
 

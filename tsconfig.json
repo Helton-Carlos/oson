@@ -14,6 +14,13 @@
     "lib": ["es2023"],
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@routes/*": ["routes/*"],
+      "@controllers/*": ["controllers/*"],
+      "@db/*": ["db/*"],
+      "@types/*": ["types/*"]
+    },
     // For nodejs:
     // "types": ["node"],
     // and npm install -D @types/node
