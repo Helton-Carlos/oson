@@ -17,10 +17,10 @@ export const checkUsers = async (
       'SELECT * FROM users WHERE nome = $1 AND password = $2',
       [nome, password],
     );
-    
+
     if (result.rows.length) {
       const user = result.rows[0];
-      console.log(user);
+
       if (!user) {
         res.status(401).json({ autenticado: false });
         return;
