@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 import type { Order } from 'types/orden';
 
 export const createOrders = async (
-  req: Request<unknown, unknown, Order>,
+  req: Request<Order>,
   res: Response,
 ): Promise<void> => {
   const { title, description, schedule_time } = req.body;
