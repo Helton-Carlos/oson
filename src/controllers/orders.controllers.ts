@@ -2,7 +2,7 @@ import type { Request, Response } from 'express';
 import pool from '@db/index';
 import { v4 as uuidv4 } from 'uuid';
 
-import type { Order } from 'types/orden';
+import type { Order } from 'types/order';
 
 export const createOrders = async (
   req: Request<Order>,
