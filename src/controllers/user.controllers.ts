@@ -7,8 +7,8 @@ import type { User } from 'types/user';
 const JWT_SECRET = process.env.JWT_SECRET || '';
 
 export const checkUsers = async (
-  req: Request<unknown, unknown, { nome: string; password: string }>,
-  res: Response
+  req: Request<User>,
+  res: Response,
 ): Promise<void> => {
   const { nome, password } = req.body;
 
@@ -48,8 +48,8 @@ export const checkUsers = async (
 };
 
 export const setUsers = async (
-  req: Request<unknown, unknown, { nome: string; email: string; password: string }>,
-  res: Response
+  req: Request<User>,
+  res: Response,
 ): Promise<void> => {
   const { nome, email, password } = req.body;
 
